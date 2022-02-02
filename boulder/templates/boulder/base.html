@@ -1,0 +1,15 @@
+{% load static %}
+<html>
+  <head>
+    <title>Fads in Decades</title>
+    <link rel="stylesheet" href="{% static 'css/boulder.css' %}" />
+  </head>
+  <body>
+    <h1>Decades</h1>
+    <nav>
+      <a href="/fads">Fads</a>
+      <a href="/">Decades</a>
+    </nav>
+    {% block content %} {% endblock %}
+  </body>
+</html>

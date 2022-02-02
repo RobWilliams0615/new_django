@@ -1,0 +1,30 @@
+h1 {
+  font-family: 'Anton', sans-serif;
+}
+
+nav a {
+  border-radius: 25px;
+  margin: 0.5em;
+  padding: 0.5em;
+  background-color: #eeeeee;
+  text-decoration: none;
+  color: blue;
+}
+
+nav a:hover {
+  background-color: blue;
+  color: white;
+}
+
+.create-decade {
+  border-radius: 25px;
+  margin: 0.5em;
+  padding: 0.5em;
+  background-color: #eeeeee;
+  text-decoration: none;
+  color: blue;
+}
+
+li a {
+  text-decoration: none;
+}

@@ -1,0 +1,18 @@
+{% extends 'boulder/base.html' %} {% block content %}
+<h2>{{ decade.start_year }} <a href="{% url 'decade_edit' pk=decade.pk %}">(edit)</a></h2>
+
+<a href="{% url 'decade_delete' pk=decade.pk %}">Delete</a>
+<ul>
+  {% for fad in decade.fads.all %}
+  <li>
+    <a href="">{{ fad.name }}-{{ fad.decade}}-{{ fad.description }}-{{ fad.image_url }}</a>
+    <a href="{% url 'decade_detail' pk=decade.pk %}">
+      {{ decade.start_year }}
+    </a>
+    <a href="{% url 'fad_detail' pk=fad.pk %}">
+      {{ fad.description }}-{{ fad.album }}
+    </a>
+  </li>
+  {% endfor %}
+</ul>
+{% endblock %}
